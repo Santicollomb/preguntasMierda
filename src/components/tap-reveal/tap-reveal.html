@@ -1,11 +1,19 @@
-<div class="tap-reveal-container" (click)="toggle()" [class.tap-reveal-after]="toggled">
+<div class="tap-reveal-container">
 
-    <div class="before">
-        <ng-content class="before" select=".tap-reveal-before"></ng-content>
+    <div class="before pregunta1" (click)="mostrarEstadisticas" [class.tap-reveal-after]="toggled">
+        <ng-content class="before" select=".tap-reveal-pregunta1"></ng-content>
     </div>
 
-    <div class="after">
-        <ng-content select=".tap-reveal-after"></ng-content>
+    <div class="after pregunta2">
+        <ng-content select=".tap-reveal-pregunta2"></ng-content>
+    </div>
+
+    <div [style.background-color]="mostrarEstadisticas()" class="estadisticas1">
+        <ng-content select=".tap-reveal-estadisticas1"></ng-content>
+    </div>
+
+    <div class="estadisticas2">
+        <ng-content select=".tap-reveal-estadisticas2"></ng-content>
     </div>
 
 </div>

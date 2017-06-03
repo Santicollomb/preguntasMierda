@@ -1,20 +1,16 @@
 tap-reveal {
 
-    .tap-reveal-container {
-        position: relative;
-    }
-
-    .before {
+    .estadisticas1 {
         position: absolute;
         top: 0;
         left: 0;
-        opacity: 1;
+        opacity: 0;
         transition: opacity 1000ms;
     }
 
-    .after {
+    .estadisticas2 {
         position: absolute;
-        top: 0;
+        top: 50%;
         left: 0;
         opacity: 0;
         transition: opacity 1000ms;

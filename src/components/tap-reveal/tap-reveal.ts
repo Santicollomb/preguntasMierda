@@ -12,8 +12,8 @@ export class TapRevealComponent {
 
   }
 
-  toggle() {
-    this.toggled = !this.toggled;
+  mostrarEstadisticas() {
+
   }
 
 }

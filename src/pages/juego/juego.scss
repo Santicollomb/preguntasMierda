@@ -1,13 +1,30 @@
 .ios, .md {
 
-    page-home {
+    page-juego {
 
         .tap-reveal-container {
             width: 100%;
+            height: 100%;
+
         }
 
-        .before, .after {
+        .estadisticas1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: opacity 1000ms;
+        }
+
+        .estadisticas2 {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transition: opacity 1000ms;
+        }
+
+        .pregunta1, .pregunta2, .estadisticas1, .estadisticas2 {
             width: 100%;
+            height: 50%;
             background-color: map-get($colors, danger);
             color: #fff;
             padding: 20px;
