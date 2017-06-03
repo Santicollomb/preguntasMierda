@@ -1,10 +1,13 @@
 tap-reveal {
 
+  .esconder {
+    opacity: 0;
+  }
+
     .estadisticas1 {
         position: absolute;
         top: 0;
         left: 0;
-        opacity: 0;
         transition: opacity 1000ms;
     }
 
@@ -12,7 +15,6 @@ tap-reveal {
         position: absolute;
         top: 50%;
         left: 0;
-        opacity: 0;
         transition: opacity 1000ms;
     }
 

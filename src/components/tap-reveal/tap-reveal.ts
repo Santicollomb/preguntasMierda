@@ -7,12 +7,8 @@ import { Component } from '@angular/core';
 export class TapRevealComponent {
 
   toggled: boolean = false;
-
+isClassVisible: false;
   constructor() {
-
-  }
-
-  mostrarEstadisticas() {
 
   }
 

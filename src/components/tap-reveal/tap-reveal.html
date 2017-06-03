@@ -1,6 +1,6 @@
 <div class="tap-reveal-container">
 
-    <div class="before pregunta1" (click)="mostrarEstadisticas" [class.tap-reveal-after]="toggled">
+    <div class="before pregunta1">
         <ng-content class="before" select=".tap-reveal-pregunta1"></ng-content>
     </div>
 
@@ -8,11 +8,11 @@
         <ng-content select=".tap-reveal-pregunta2"></ng-content>
     </div>
 
-    <div [style.background-color]="mostrarEstadisticas()" class="estadisticas1">
+    <div class="estadisticas1" (click)="isClassVisible = !isClassVisible;">
         <ng-content select=".tap-reveal-estadisticas1"></ng-content>
     </div>
 
-    <div class="estadisticas2">
+    <div class="estadisticas2" [ngClass]="{'esconder': isClassVisible }">
         <ng-content select=".tap-reveal-estadisticas2"></ng-content>
     </div>
 
