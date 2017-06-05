@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, PopoverController } from 'ionic-angular';
 import { MenuPage } from '../../pages/home/menu';
-import { JuegoPage } from '../../pages/juego/juego';
+import { Juego2Page } from '../../pages/juego2/juego2';
 
 
 @Component({
@@ -21,8 +21,8 @@ export class HomePage {
   });
 }
 
-jugar(){
-  this.navCtrl.push(JuegoPage)
+jugar2(){
+  this.navCtrl.push(Juego2Page)
 }
 
 }

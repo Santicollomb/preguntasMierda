@@ -1,0 +1,27 @@
+<ion-content>
+
+    <ion-slides #slides>
+
+        <ion-slide *ngFor="let question of questions; let i = index;">
+
+            <flash-card [isFlipped]="question.flashCardFlipped2" (click)="elegirOpcion1(question)">
+                <h4 class="flash-card-front" [innerHTML]="question.pregunta1"></h4>
+                <h2 class="flash-card-back">votos: {{question.votos2}}</h2>
+            </flash-card>
+
+            <button ion-button color="danger" round class="o"> O </button>
+
+            <flash-card [isFlipped]="question.flashCardFlipped" (click)="elegirOpcion2(question)">
+                <h4 class="flash-card-front" [innerHTML]="question.pregunta2"></h4>
+                <h2 class="flash-card-back"> votos: {{question.votos1}}</h2>
+            </flash-card>
+
+        </ion-slide>
+
+        <ion-slide >
+            <button ion-button (click)="restartQuiz()"> restart </button>
+        </ion-slide>
+
+    </ion-slides>
+
+</ion-content>

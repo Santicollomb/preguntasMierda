@@ -1,0 +1,36 @@
+{
+    "questions": [
+
+        {
+            "pregunta1": "perder un pie y un brazo",
+            "pregunta2": "perder una mano y una pierna",
+            "flashCardFlipped": false,
+            "flashCardFlipped2": false,
+            "votos1": 0,
+            "votos2": 0,
+            "estadisticas1": 0,
+            "estadisticas2": 0
+        },
+        {
+            "pregunta1": "tener un pene en la frente",
+            "pregunta2": "tener bolas en la pera",
+            "flashCardFlipped": false,
+            "flashCardFlipped2": false,
+            "votos1": 0,
+            "votos2": 0,
+            "estadisticas1": 0,
+            "estadisticas2": 0
+        },
+        {
+            "pregunta1": "tirarte pedos por la boca",
+            "pregunta2": "mear por la oreja",
+            "flashCardFlipped": false,
+            "flashCardFlipped2": false,
+            "votos1": 0,
+            "votos2": 0,
+            "estadisticas1": 0,
+            "estadisticas2": 0
+        }
+
+    ]
+}

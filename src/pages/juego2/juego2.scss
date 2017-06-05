@@ -1,0 +1,14 @@
+page-juego2 {
+
+    height: 100%;
+    display: flex;
+
+    .o {
+      position: absolute;
+      z-index: 999;
+      top: 46vh;
+      left: 46vw;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+}
