@@ -28,7 +28,6 @@ export class Juego2Page {
 
              data.map((preguntas) => {
 
-                 let originalOrder = preguntas.answers;
                  return preguntas;
 
              });
