@@ -19,8 +19,8 @@ export class Data {
 
         return new Promise(resolve => {
 
-            this.http.get('assets/data/preguntas.json').map(res => res.json()).subscribe(data => {
-                this.data = data.questions;
+            this.http.get("https://api.myjson.com/bins/11tk5p").map(res => res.json()).subscribe(data => {
+                this.data = data.mierda;
                 resolve(this.data);
             });
 

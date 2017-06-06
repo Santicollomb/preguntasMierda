@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, PopoverController } from 'ionic-angular';
 import { Juego2Page } from '../../pages/juego2/juego2';
 import { OpcionesPage } from '../../pages/opciones/opciones';
+import { Data } from '../../providers/data';
 
 
 @Component({
@@ -10,7 +11,21 @@ import { OpcionesPage } from '../../pages/opciones/opciones';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController, public popoverCtrl: PopoverController) {
+  datos: any
+
+  constructor(public navCtrl: NavController, public popoverCtrl: PopoverController, public dataService: Data) {
+
+    this.dataService.load().then((data) => {
+
+        data.map((preguntas) => {
+
+            return preguntas;
+
+        });
+
+        this.datos = data;
+
+    });
 
   }
 
@@ -19,7 +34,9 @@ export class HomePage {
 }
 
 jugar2(){
-  this.navCtrl.push(Juego2Page)
+  this.navCtrl.push(Juego2Page,{
+    "parametros": this.datos
+  })
 }
 
 }

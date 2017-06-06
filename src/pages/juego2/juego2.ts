@@ -1,6 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { NavController } from 'ionic-angular';
-import { Data } from '../../providers/data';
+import { NavController, NavParams } from 'ionic-angular';
 
 @Component({
   selector: 'page-juego2',
@@ -14,27 +13,16 @@ export class Juego2Page {
      score: number = 0;
 
      slideOptions: any;
-     questions: any;
+     datos: any
 
-     constructor(public navCtrl: NavController, public dataService: Data) {
-
+     constructor(public navCtrl: NavController,  public parametros: NavParams) {
+        this.datos = this.parametros.get('parametros');
+        console.log(this.parametros.get('parametros'))
      }
 
      ionViewDidLoad() {
 
          this.slides.lockSwipes(true);
-
-         this.dataService.load().then((data) => {
-
-             data.map((preguntas) => {
-
-                 return preguntas;
-
-             });
-
-             this.questions = data;
-
-         });
 
      }
 
@@ -44,30 +32,30 @@ export class Juego2Page {
          this.slides.lockSwipes(true);
      }
 
-     elegirOpcion1(question){
+     elegirOpcion1(mierda){
 
          this.hasAnswered = true;
-         question.flashCardFlipped = true;
-         question.estadisticas1 + 1;
+         mierda.flashCardFlipped = true;
+         mierda.estadisticas1 + 1;
 
          setTimeout(() => {
              this.hasAnswered = false;
              this.nextSlide();
-             question.flashCardFlipped = false;
+             mierda.flashCardFlipped = false;
          }, 3000);
      }
 
-     elegirOpcion2(question){
+     elegirOpcion2(mierda){
 
          this.hasAnswered = true;
-         question.flashCardFlipped2 = true;
-         question.estadisticas2 + 1;
-         console.log(question.estadisticas2)
+         mierda.flashCardFlipped2 = true;
+         mierda.estadisticas2 + 1;
+         console.log(mierda.estadisticas2)
 
          setTimeout(() => {
              this.hasAnswered = false;
              this.nextSlide();
-             question.flashCardFlipped2 = false;
+             mierda.flashCardFlipped2 = false;
          }, 3000);
      }
 

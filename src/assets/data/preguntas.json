@@ -1,5 +1,5 @@
 {
-    "questions": [
+    "mierda": [
 
         {
             "pregunta1": "perder un pie y un brazo",
@@ -8,8 +8,7 @@
             "flashCardFlipped2": false,
             "votos1": 0,
             "votos2": 0,
-            "estadisticas1": 0,
-            "estadisticas2": 0
+            "votosTotal": 0
         },
         {
             "pregunta1": "tener un pene en la frente",
@@ -18,8 +17,7 @@
             "flashCardFlipped2": false,
             "votos1": 0,
             "votos2": 0,
-            "estadisticas1": 0,
-            "estadisticas2": 0
+            "votosTotal": 0
         },
         {
             "pregunta1": "tirarte pedos por la boca",
@@ -28,8 +26,7 @@
             "flashCardFlipped2": false,
             "votos1": 0,
             "votos2": 0,
-            "estadisticas1": 0,
-            "estadisticas2": 0
+            "votosTotal": 0
         }
 
     ]

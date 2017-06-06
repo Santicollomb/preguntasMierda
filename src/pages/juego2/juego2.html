@@ -2,18 +2,20 @@
 
     <ion-slides #slides>
 
-        <ion-slide *ngFor="let question of questions; let i = index;">
+        <ion-slide *ngFor="let dato of datos; let i = index;">
 
-            <flash-card [isFlipped]="question.flashCardFlipped2" (click)="elegirOpcion1(question)">
-                <h4 class="flash-card-front" [innerHTML]="question.pregunta1"></h4>
-                <h2 class="flash-card-back">votos: {{question.votos2}}</h2>
+            <flash-card [isFlipped]="dato.flashCardFlipped2" (click)="elegirOpcion1(dato)">
+                <h4 class="flash-card-front" [innerHTML]="dato.pregunta1"></h4>
+                <h2 class="flash-card-back"> votos: {{dato.votos2}} </h2>
+                <h2 class="flash-card-back"> porcentaje: {{dato.votosTotal * 100 / dato.votos2}} </h2>
             </flash-card>
 
             <button ion-button color="danger" round class="o"> O </button>
 
-            <flash-card [isFlipped]="question.flashCardFlipped" (click)="elegirOpcion2(question)">
-                <h4 class="flash-card-front" [innerHTML]="question.pregunta2"></h4>
-                <h2 class="flash-card-back"> votos: {{question.votos1}}</h2>
+            <flash-card [isFlipped]="dato.flashCardFlipped" (click)="elegirOpcion2(dato)">
+                <h4 class="flash-card-front" [innerHTML]="dato.pregunta2"></h4>
+                <h2 class="flash-card-back"> votos: {{dato.votos1}} </h2>
+                <h2 class="flash-card-back"> porcentaje: {{dato.votosTotal * 100 / dato.votos1}} </h2>
             </flash-card>
 
         </ion-slide>
