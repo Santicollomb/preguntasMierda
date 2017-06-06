@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, PopoverController } from 'ionic-angular';
-import { MenuPage } from '../../pages/home/menu';
 import { Juego2Page } from '../../pages/juego2/juego2';
+import { OpcionesPage } from '../../pages/opciones/opciones';
 
 
 @Component({
@@ -14,11 +14,8 @@ export class HomePage {
 
   }
 
-  abrirMenu(myEvent) {
-  let popover = this.popoverCtrl.create(MenuPage);
-  popover.present({
-    ev: myEvent
-  });
+  abrirOpciones() {
+    this.navCtrl.push(OpcionesPage);
 }
 
 jugar2(){

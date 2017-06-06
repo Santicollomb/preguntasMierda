@@ -6,7 +6,7 @@ import { HttpModule }    from '@angular/http';
 import { IonicStorageModule } from '@ionic/storage';
 
 import { HomePage } from '../pages/home/home';
-import { MenuPage } from '../pages/home/menu';
+import { OpcionesPage } from '../pages/opciones/opciones';
 import { Juego2Page } from '../pages/juego2/juego2';
 import { IntroPage } from '../pages/intro/intro'
 
@@ -20,7 +20,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   declarations: [
     MyApp,
     HomePage,
-    MenuPage,
+    OpcionesPage,
     FlashCardComponent,
     Juego2Page,
     IntroPage
@@ -35,7 +35,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     HomePage,
-    MenuPage,
+    OpcionesPage,
     Juego2Page,
     IntroPage
   ],

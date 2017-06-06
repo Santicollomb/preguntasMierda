@@ -1,0 +1,54 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title> Opciones </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+  <ion-list-header>
+    Sonido
+  </ion-list-header>
+    <ion-item>
+      <ion-label> Sonido</ion-label>
+      <ion-toggle checked="true"></ion-toggle>
+    </ion-item>
+
+    <ion-item>
+      <ion-range step="20">
+        <ion-icon range-left name="mic-off"></ion-icon>
+        <ion-icon range-right name="mic"></ion-icon>
+      </ion-range>
+ </ion-item>
+
+  <ion-list radio-group>
+    <ion-list-header>
+      Idioma
+    </ion-list-header>
+    <ion-item>
+        <ion-label>Español</ion-label>
+        <ion-radio checked="true" value="español"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Ingles</ion-label>
+        <ion-radio value="ingles"></ion-radio>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Ruso</ion-label>
+        <ion-radio value="ruso"></ion-radio>
+      </ion-item>
+
+  </ion-list>
+
+  <ion-list-header>
+    Contacto
+  </ion-list-header>
+  <ion-item> 299757841 </ion-item>
+  <ion-item> contacto@codingyourmind.com</ion-item>
+
+</ion-content>
